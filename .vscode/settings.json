@@ -11,5 +11,5 @@
     "[javascript][javascriptreact][typescript][typescriptreact][json][jsonc][html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "cSpell.words": ["Arcanist", "fabula", "gmkit"]
+    "cSpell.words": ["Arcanism", "Arcanist", "fabula", "gmkit"]
 }

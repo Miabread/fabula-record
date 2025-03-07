@@ -1,4 +1,4 @@
-export type Source = 'core' | 'high' | 'techno' | 'nature' | 'gmkit' | 'bonus';
+export type Source = 'Core' | 'High' | 'Techno' | 'Natural' | 'Gmkit' | 'Bonus';
 
 export interface Class {
     source: Source;
@@ -17,5 +17,5 @@ export interface FreeBenefits {
 export interface Skill {
     name: string;
     level: number;
-    description: string[];
+    description: JSX.Element;
 }
