@@ -8,7 +8,7 @@
     "files.trimTrailingWhitespace": true,
     "editor.semanticHighlighting.enabled": true,
     "files.eol": "\n",
-    "[javascript][javascriptreact][typescript][typescriptreact][json][jsonc][html]": {
+    "[javascript][javascriptreact][typescript][typescriptreact][json][jsonc][html][css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "cSpell.words": ["Arcanism", "Arcanist", "fabula", "gmkit"]

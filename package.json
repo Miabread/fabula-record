@@ -10,6 +10,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@tabler/icons-react": "^3.31.0",
         "@tailwindcss/vite": "^4.0.0",
         "@tanstack/react-router": "^1.112.18",
         "classnames": "^2.5.1",

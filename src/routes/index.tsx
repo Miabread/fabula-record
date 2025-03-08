@@ -1,53 +1,59 @@
-import classNames from 'classnames';
-import { SourceTag } from '../components';
-import { coreArcanist } from '../data/core/arcanist';
 import { createFileRoute } from '@tanstack/react-router';
+import {
+    IconBallpen,
+    IconBriefcase2,
+    IconChartPie,
+    IconMoon,
+    IconSparkles,
+    IconStar,
+    IconSun,
+    IconSwords,
+    IconUser,
+} from '@tabler/icons-react';
 
 export const Route = createFileRoute('/')({
     component: Index,
 });
 
 function Index() {
-    const Class = coreArcanist;
     return (
-        <div className="flex h-screen w-screen text-white">
-            <aside className="w-lg bg-slate-900 drop-shadow-md z-10 p-20">
-                <SourceTag source="Core" />
-                <SourceTag source="High" />
-                <SourceTag source="Techno" />
-                <SourceTag source="Natural" />
-                <SourceTag source="Gmkit" />
-                <SourceTag source="Bonus" />
-            </aside>
+        <>
+            <h1 className="text-xl border-l-2 border-b-2 border-green-300 p-2 rounded-bl-xl mb-10 flex gap-2 items-center">
+                <IconMoon /> Eleri's Guide of Distant Travels
+            </h1>
+            <div className="flex text-lg gap-5 ml-5">
+                <a className="flex border-2 border-green-300 p-2 px-3 rounded-xl gap-2 items-center">
+                    <IconBriefcase2 /> Classes
+                </a>
+                <a className="flex border-2 border-green-300 p-2 px-3 rounded-xl gap-2 items-center">
+                    <IconSparkles /> Heroic Skills
+                </a>
+            </div>
 
-            <main className="w-full bg-slate-800 p-10 overflow-y-auto">
-                <div className="bg-slate-600 m-5 p-5 rounded-xl flex">
-                    <h1 className="text-4xl font-bold ">{Class.name}</h1>
-                    <SourceTag source={Class.source} page={Class.page} className="ml-auto" />
-                </div>
+            <h1 className="text-xl border-l-2 border-b-2 border-red-300 p-2 rounded-bl-xl mt-15 mb-10 flex gap-2 items-center">
+                <IconStar /> Fuji's Account of Twisted Fates
+            </h1>
+            <div className="flex text-lg gap-5 ml-5">
+                <a className="flex border-2 border-red-300 p-2 px-3 rounded-xl gap-2 items-center">
+                    <IconBallpen /> Quirks
+                </a>
+                <a className="flex border-2 border-red-300 p-2 px-3 rounded-xl gap-2 items-center">
+                    <IconChartPie /> Zero Powers
+                </a>
+            </div>
 
-                <div className="bg-slate-600 m-5 p-5 rounded-xl">
-                    <div className="flex">
-                        <h2 className="text-2xl font-bold">Skills</h2>
-                        <SourceTag source={Class.source} page={Class.page + 1} className="ml-auto" />
-                    </div>
-                </div>
-
-                {Class.skills.map((skill) => (
-                    <div className="bg-slate-600 m-5 p-5 rounded-xl">
-                        <h3 className="text-xl font-bold flex pb-2">
-                            {skill.name}
-                            <span className={classNames('ml-auto', { 'text-gray-400': skill.level == 1 })}>
-                                【✦{skill.level}】
-                            </span>
-                        </h3>
-                        {skill.description}
-                    </div>
-                ))}
-            </main>
-
-            <aside className="w-lg bg-slate-900 drop-shadow-md z-10 p-20">Right</aside>
-        </div>
+            <h1 className="text-xl border-l-2 border-b-2 border-purple-300 p-2 rounded-bl-xl mt-15 mb-10 flex gap-2 items-center">
+                <IconSun /> Zatari's Laws of Love and War
+            </h1>
+            <div className="flex text-lg gap-5 ml-5">
+                <a className="flex border-2 border-purple-300 p-2 px-3 rounded-xl gap-2 items-center">
+                    <IconSwords /> Equipment
+                </a>
+                <a className="flex border-2 border-purple-300 p-2 px-3 rounded-xl gap-2 items-center">
+                    <IconUser /> NPC Skills
+                </a>
+            </div>
+        </>
     );
 }
 
