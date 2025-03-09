@@ -1,7 +1,7 @@
 import { Class } from '..';
 import { B, P } from '../../components';
 
-export const coreChimerist: Class = {
+export const chimerist: Class = {
     source: 'Core',
     page: 182,
     name: 'Chimerist',

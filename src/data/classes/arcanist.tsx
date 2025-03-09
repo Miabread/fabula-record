@@ -1,7 +1,7 @@
 import { Class } from '..';
 import { B, P } from '../../components';
 
-export const coreArcanist: Class = {
+export const arcanist: Class = {
     source: 'Core',
     page: 176,
     name: 'Arcanist',

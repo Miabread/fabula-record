@@ -8,7 +8,7 @@ export const useMainColor = () =>
     useChildMatches({
         select: (matches) => {
             for (const match of matches) {
-                if (mainColors[match.routeId as keyof typeof mainColors]) {
+                if (match.routeId in mainColors) {
                     return mainColors[match.routeId as keyof typeof mainColors];
                 }
             }
