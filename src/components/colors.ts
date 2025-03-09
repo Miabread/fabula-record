@@ -8,6 +8,7 @@ export const bgColors = {
 } as const;
 
 export const hoverBgColors = {
+    default: 'hover:bg-white',
     eleri: 'hover:bg-green-300',
     zatari: 'hover:bg-purple-300',
     fuji: 'hover:bg-red-300',
@@ -15,6 +16,7 @@ export const hoverBgColors = {
 } as const;
 
 export const borderColors = {
+    default: 'border-white-300',
     eleri: 'border-green-300',
     zatari: 'border-purple-300',
     fuji: 'border-red-300',

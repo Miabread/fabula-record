@@ -1,4 +1,4 @@
-import { createFileRoute } from '@tanstack/react-router';
+import { createFileRoute, Link } from '@tanstack/react-router';
 import {
     IconBallpen,
     IconBriefcase2,
@@ -20,14 +20,16 @@ export const Route = createFileRoute('/')({
 
 function Index() {
     return (
-        <>
+        <div className="bg-section w-full my-10 mx-30 rounded-lg p-10">
             <Heading color="eleri">
                 <IconMoon /> Eleri's Guide of Distant Travels
             </Heading>
             <ButtonRow>
-                <Button color="eleri">
-                    <IconBriefcase2 /> Classes
-                </Button>
+                <Link to="/classes">
+                    <Button color="eleri">
+                        <IconBriefcase2 /> Classes
+                    </Button>{' '}
+                </Link>
                 <Button color="eleri">
                     <IconSparkles /> Heroic Skills
                 </Button>
@@ -65,8 +67,6 @@ function Index() {
                     <IconFileSearch /> Glossary
                 </Button>
             </ButtonRow>
-        </>
+        </div>
     );
 }
-
-export default Index;

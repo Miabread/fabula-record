@@ -25,7 +25,7 @@ export const Heading: FC<PropsWithChildren<{ color: keyof typeof borderColors }>
 );
 
 export const Button: FC<PropsWithChildren<{ color: keyof typeof borderColors }>> = ({ color, children }) => (
-    <a
+    <span
         className={classNames(
             'flex border-2 p-2 px-3 rounded-xl gap-2 items-center hover:text-black',
             borderColors[color],
@@ -33,7 +33,7 @@ export const Button: FC<PropsWithChildren<{ color: keyof typeof borderColors }>>
         )}
     >
         {children}
-    </a>
+    </span>
 );
 
 export const ButtonRow: FC<PropsWithChildren> = ({ children }) => (

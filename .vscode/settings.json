@@ -11,5 +11,14 @@
     "[javascript][javascriptreact][typescript][typescriptreact][json][jsonc][html][css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "cSpell.words": ["Arcanism", "Arcanist", "eleri", "fabula", "gmkit", "zatari"]
+    "cSpell.words": ["Arcanism", "Arcanist", "eleri", "fabula", "gmkit", "zatari"],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/routeTree.gen.ts": true
+    }
 }
