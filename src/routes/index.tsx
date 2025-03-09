@@ -3,13 +3,16 @@ import {
     IconBallpen,
     IconBriefcase2,
     IconChartPie,
+    IconComet,
+    IconFileSearch,
+    IconLibrary,
     IconMoon,
     IconSparkles,
-    IconStar,
     IconSun,
     IconSwords,
     IconUser,
 } from '@tabler/icons-react';
+import { Heading, ButtonRow, Button } from '../components';
 
 export const Route = createFileRoute('/')({
     component: Index,
@@ -18,41 +21,50 @@ export const Route = createFileRoute('/')({
 function Index() {
     return (
         <>
-            <h1 className="text-xl border-l-2 border-b-2 border-green-300 p-2 rounded-bl-xl mb-10 flex gap-2 items-center">
+            <Heading color="eleri">
                 <IconMoon /> Eleri's Guide of Distant Travels
-            </h1>
-            <div className="flex text-lg gap-5 ml-5">
-                <a className="flex border-2 border-green-300 p-2 px-3 rounded-xl gap-2 items-center">
+            </Heading>
+            <ButtonRow>
+                <Button color="eleri">
                     <IconBriefcase2 /> Classes
-                </a>
-                <a className="flex border-2 border-green-300 p-2 px-3 rounded-xl gap-2 items-center">
+                </Button>
+                <Button color="eleri">
                     <IconSparkles /> Heroic Skills
-                </a>
-            </div>
+                </Button>
+            </ButtonRow>
 
-            <h1 className="text-xl border-l-2 border-b-2 border-red-300 p-2 rounded-bl-xl mt-15 mb-10 flex gap-2 items-center">
-                <IconStar /> Fuji's Account of Twisted Fates
-            </h1>
-            <div className="flex text-lg gap-5 ml-5">
-                <a className="flex border-2 border-red-300 p-2 px-3 rounded-xl gap-2 items-center">
-                    <IconBallpen /> Quirks
-                </a>
-                <a className="flex border-2 border-red-300 p-2 px-3 rounded-xl gap-2 items-center">
-                    <IconChartPie /> Zero Powers
-                </a>
-            </div>
-
-            <h1 className="text-xl border-l-2 border-b-2 border-purple-300 p-2 rounded-bl-xl mt-15 mb-10 flex gap-2 items-center">
+            <Heading color="zatari">
                 <IconSun /> Zatari's Laws of Love and War
-            </h1>
-            <div className="flex text-lg gap-5 ml-5">
-                <a className="flex border-2 border-purple-300 p-2 px-3 rounded-xl gap-2 items-center">
+            </Heading>
+            <ButtonRow>
+                <Button color="zatari">
                     <IconSwords /> Equipment
-                </a>
-                <a className="flex border-2 border-purple-300 p-2 px-3 rounded-xl gap-2 items-center">
+                </Button>
+                <Button color="zatari">
                     <IconUser /> NPC Skills
-                </a>
-            </div>
+                </Button>
+            </ButtonRow>
+
+            <Heading color="fuji">
+                <IconComet /> Fuji's Account of Twisted Fates
+            </Heading>
+            <ButtonRow>
+                <Button color="fuji">
+                    <IconBallpen /> Quirks
+                </Button>
+                <Button color="fuji">
+                    <IconChartPie /> Zero Powers
+                </Button>
+            </ButtonRow>
+
+            <Heading color="maria">
+                <IconLibrary /> Maria's Bundle of Research Notes
+            </Heading>
+            <ButtonRow>
+                <Button color="maria">
+                    <IconFileSearch /> Glossary
+                </Button>
+            </ButtonRow>
         </>
     );
 }
