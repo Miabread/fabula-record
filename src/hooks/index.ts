@@ -1,14 +1,14 @@
 import { useChildMatches } from '@tanstack/react-router';
 
 const mainColors = {
-    '/classes/': 'eleri',
+    '/classes': 'eleri',
 } as const;
 
 export const useMainColor = () =>
     useChildMatches({
         select: (matches) => {
             for (const match of matches) {
-                if (match.routeId in matches) {
+                if (mainColors[match.routeId as keyof typeof mainColors]) {
                     return mainColors[match.routeId as keyof typeof mainColors];
                 }
             }

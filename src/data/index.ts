@@ -12,6 +12,7 @@ export interface FreeBenefits {
     increaseHP?: boolean;
     increaseMP?: boolean;
     increaseIP?: boolean;
+    ritualism?: boolean;
 }
 
 export interface Skill {

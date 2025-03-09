@@ -3,7 +3,7 @@ import { B, P } from '../../components';
 
 export const coreArcanist: Class = {
     source: 'Core',
-    page: 116,
+    page: 176,
     name: 'Arcanist',
     freeBenefits: {
         increaseMP: true,
