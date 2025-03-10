@@ -12,5 +12,5 @@ export default defineConfig({
             '@tabler/icons-react': '@tabler/icons-react/dist/esm/icons/index.mjs',
         },
     },
-    base: 'https://miabread.github.io/fabula-record/',
+    base: '/fabula-record/',
 });
