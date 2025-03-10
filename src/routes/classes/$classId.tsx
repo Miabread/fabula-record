@@ -1,6 +1,7 @@
 import { createFileRoute, Navigate } from '@tanstack/react-router';
 import { classes, defaultClass } from '../../data/classes';
 import { B, Heading, P, SourceTag } from '../../components';
+import { Fragment } from 'react/jsx-runtime';
 
 export const Route = createFileRoute('/classes/$classId')({
     component: Class,
@@ -63,12 +64,12 @@ function Class() {
             )}
 
             {classData.skills.map((skill) => (
-                <>
+                <Fragment key={skill.name}>
                     <Heading color="eleri">
                         {skill.name} {skill.level > 1 && <>【✦{skill.level}】</>}
                     </Heading>
                     {skill.description}
-                </>
+                </Fragment>
             ))}
         </>
     );

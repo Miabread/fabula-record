@@ -16,7 +16,7 @@ function Classes() {
                 </Heading>
                 <nav className="flex flex-col">
                     {Object.entries(classes).map(([classId, classData]) => (
-                        <Link to="/classes/$classId" params={{ classId }}>
+                        <Link to="/classes/$classId" params={{ classId }} key={classId}>
                             {classData.name} <SourceTag source={classData.source} page={classData.page} />
                         </Link>
                     ))}
