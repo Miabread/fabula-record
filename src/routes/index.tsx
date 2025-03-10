@@ -20,7 +20,7 @@ export const Route = createFileRoute('/')({
 
 function Index() {
     return (
-        <div className="bg-section w-full my-10 mx-30 rounded-lg p-10">
+        <div className="bg-section w-full my-10 mx-30 rounded-lg p-10 inset-shadow-xl">
             <Heading color="eleri">
                 <IconMoon /> Eleri's Guide of Distant Travels
             </Heading>

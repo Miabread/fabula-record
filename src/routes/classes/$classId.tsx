@@ -26,7 +26,9 @@ function Class() {
             )}
             {classData.skills.map((skill) => (
                 <>
-                    <Heading color="eleri">{skill.name} </Heading>
+                    <Heading color="eleri">
+                        {skill.name} {skill.level > 1 && <>【✦{skill.level}】</>}
+                    </Heading>
                     {skill.description}
                 </>
             ))}

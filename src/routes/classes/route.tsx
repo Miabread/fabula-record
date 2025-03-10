@@ -10,7 +10,7 @@ export const Route = createFileRoute('/classes')({
 function Classes() {
     return (
         <>
-            <aside className="bg-section w-2xl mr-auto m-10 rounded-lg p-10">
+            <aside className="bg-section w-2xl mr-auto m-10 rounded-lg p-10 inset-shadow-xl">
                 <Heading color="eleri">
                     <IconBriefcase /> Classes
                 </Heading>
@@ -22,7 +22,7 @@ function Classes() {
                     ))}
                 </nav>
             </aside>
-            <div className="bg-section w-full my-10 mx-30 rounded-lg p-10 overflow-y-auto">
+            <div className="bg-section w-full my-10 mx-30 rounded-lg p-10 overflow-y-auto inset-shadow-xl">
                 <Outlet />
             </div>
         </>

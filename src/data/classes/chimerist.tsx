@@ -15,7 +15,7 @@ export const chimerist: Class = {
             level: 5,
             description: (
                 <P>
-                    After you deal damage to one or more creatures with a spell, if you have an <B>arcane</B>,
+                    After you deal damage to one or more creatures with a spell, if you have an <B>arcane</B>,{' '}
                     <B>dagger</B> or <B>flail</B> weapon equipped, you recover <B>【SL × 2】</B> Mind Points.
                 </P>
             ),
