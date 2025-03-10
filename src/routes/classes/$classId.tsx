@@ -1,7 +1,8 @@
-import { createFileRoute, Navigate } from '@tanstack/react-router';
-import { classes, defaultClass } from '../../data/classes';
+import { createFileRoute } from '@tanstack/react-router';
+import { classes } from '../../data/classes';
 import { B, Heading, P, SourceTag } from '../../components';
 import { Fragment } from 'react/jsx-runtime';
+import { NavigateDefaultClass } from '.';
 
 export const Route = createFileRoute('/classes/$classId')({
     component: Class,
@@ -11,7 +12,7 @@ function Class() {
     const { classId } = Route.useParams();
 
     if (!(classId in classes)) {
-        return <Navigate to="/classes/$classId" params={{ classId: defaultClass }} />;
+        return <NavigateDefaultClass />;
     }
 
     const classData = classes[classId as keyof typeof classes];
