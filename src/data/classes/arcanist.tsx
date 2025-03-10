@@ -17,7 +17,7 @@ export const arcanist: Class = {
                     After you willingly <B>dismiss</B> an Arcanum on your turn during a conflict (see next page), if
                     that Arcanum had not been <B>summoned</B> during this same turn and you have an <B>arcane</B> weapon
                     equipped, you may immediately perform the <B>Spell</B> action for free. The spell you cast this way
-                    must have a <B>total Mind Point cost of 【SL × 5】or lower</B> (you must still pay the spell's MP
+                    must have a <B>total Mind Point cost of【SL × 5】or lower</B> (you must still pay the spell's MP
                     cost).
                 </P>
             ),
@@ -27,7 +27,7 @@ export const arcanist: Class = {
             level: 2,
             description: (
                 <P>
-                    When you summon an Arcanum, you immediately recover <B>【SL × 5】</B> Hit Points.
+                    When you summon an Arcanum, you immediately recover<B>【SL × 5】</B>Hit Points.
                 </P>
             ),
         },
@@ -58,7 +58,7 @@ export const arcanist: Class = {
             description: (
                 <P>
                     As long as you are in <B>Crisis</B>, the cost for summoning your Arcana is reduced by
-                    <B>【SL × 5】</B> Mind Points.
+                    <B>【SL × 5】</B>Mind Points.
                 </P>
             ),
         },
@@ -72,7 +72,7 @@ export const arcanist: Class = {
                         domains of one or more Arcana you have bound (see next pages).
                     </P>
                     <P>
-                        Arcanism Rituals use <B>【WLP + WLP】</B> for the Magic Check.
+                        Arcanism Rituals use<B>【WLP + WLP】</B>for the Magic Check.
                     </P>
                 </>
             ),

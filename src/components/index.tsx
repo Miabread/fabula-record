@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { Source } from '../data';
 import { bgColors, hoverBgColors, borderColors } from './colors';
 
-export const P: FC<PropsWithChildren> = ({ children }) => <p className="py-1">{children}</p>;
+export const P: FC<PropsWithChildren> = ({ children }) => <p className="my-3">{children}</p>;
 
 export const B: FC<PropsWithChildren> = ({ children }) => <b>{children}</b>;
 
@@ -16,7 +16,7 @@ export const SourceTag: FC<{ source: Source; page?: number }> = ({ source, page 
 export const Heading: FC<PropsWithChildren<{ color: keyof typeof borderColors }>> = ({ color, children }) => (
     <h1
         className={classNames(
-            'text-xl border-l-2 border-b-2 p-2 rounded-bl-xl mt-10 first:mt-0 mb-5 flex gap-2 items-center',
+            'text-xl border-l-2 border-b-2 p-2 rounded-bl-xl mt-6 first:mt-0 mb-3 flex gap-2 items-center',
             borderColors[color],
         )}
     >

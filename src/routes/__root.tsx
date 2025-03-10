@@ -21,7 +21,7 @@ function Root() {
             </div>
             <div className="grow flex bg-main rounded-xl shadow-xl">
                 <Outlet />
-                <aside className="bg-section w-2xl ml-auto m-10 rounded-lg p-10 inset-shadow-xl">
+                <aside className="bg-section w-4xl ml-auto m-10 rounded-lg p-10 inset-shadow-xl">
                     <Heading color={mainColor}>
                         <IconPin />
                         Quick Access
