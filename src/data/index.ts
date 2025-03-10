@@ -12,7 +12,11 @@ export interface FreeBenefits {
     increaseHP?: boolean;
     increaseMP?: boolean;
     increaseIP?: boolean;
+    increaseHPorMP?: boolean;
+
     ritualism?: boolean;
+    projects?: boolean;
+
     martialMelee?: boolean;
     martialRanged?: boolean;
     martialArmor?: boolean;

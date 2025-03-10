@@ -17,9 +17,16 @@
         "chimerism",
         "chimerist",
         "darkblade",
+        "elementalist",
         "eleri",
+        "entropist",
+        "esper",
         "fabula",
+        "floralist",
         "gmkit",
+        "loremaster",
+        "spiritist",
+        "weaponmaster",
         "zatari"
     ],
     "files.exclude": {

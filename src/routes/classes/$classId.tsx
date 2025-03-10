@@ -22,10 +22,20 @@ function Class() {
             {classData.freeBenefits.increaseHP && <P>Permanently increase your maximum Hit Points by 5.</P>}
             {classData.freeBenefits.increaseMP && <P>Permanently increase your maximum Mind Points by 5.</P>}
             {classData.freeBenefits.increaseIP && <P>Permanently increase your maximum Inventory Points by 2.</P>}
+            {classData.freeBenefits.increaseHPorMP && (
+                <P>
+                    Permanently increase your maximum Hit Points <B>or</B> Mind Points by 5 (your choice).
+                </P>
+            )}
 
             {classData.freeBenefits.ritualism && (
                 <P>
                     You may perform Rituals whose effects fall within the <B>Ritualism</B> discipline.
+                </P>
+            )}
+            {classData.freeBenefits.projects && (
+                <P>
+                    You may initiate <B>Projects</B>.
                 </P>
             )}
 
