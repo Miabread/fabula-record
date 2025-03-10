@@ -1,6 +1,6 @@
 import { createFileRoute, Navigate } from '@tanstack/react-router';
 import { classes, defaultClass } from '../../data/classes';
-import { B, Heading, P } from '../../components';
+import { B, Heading, P, SourceTag } from '../../components';
 
 export const Route = createFileRoute('/classes/$classId')({
     component: Class,
@@ -17,7 +17,9 @@ function Class() {
 
     return (
         <>
-            <Heading color="eleri">{classData.name}</Heading>
+            <Heading color="eleri">
+                {classData.name} <SourceTag source={classData.source} page={classData.page} />
+            </Heading>
 
             {classData.freeBenefits.increaseHP && <P>Permanently increase your maximum Hit Points by 5.</P>}
             {classData.freeBenefits.increaseMP && <P>Permanently increase your maximum Mind Points by 5.</P>}

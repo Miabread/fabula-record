@@ -1,5 +1,5 @@
 import { createFileRoute, Link, Outlet } from '@tanstack/react-router';
-import { Heading } from '../../components';
+import { Heading, SourceTag } from '../../components';
 import { IconBriefcase } from '@tabler/icons-react';
 import { classes } from '../../data/classes';
 
@@ -17,7 +17,7 @@ function Classes() {
                 <nav className="flex flex-col">
                     {Object.entries(classes).map(([classId, classData]) => (
                         <Link to="/classes/$classId" params={{ classId }}>
-                            {classData.name}
+                            {classData.name} <SourceTag source={classData.source} page={classData.page} />
                         </Link>
                     ))}
                 </nav>
