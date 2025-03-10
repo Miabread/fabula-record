@@ -11,7 +11,17 @@
     "[javascript][javascriptreact][typescript][typescriptreact][json][jsonc][html][css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "cSpell.words": ["arcanism", "arcanist", "Chimerism", "chimerist", "eleri", "fabula", "gmkit", "zatari"],
+    "cSpell.words": [
+        "arcanism",
+        "arcanist",
+        "chimerism",
+        "chimerist",
+        "darkblade",
+        "eleri",
+        "fabula",
+        "gmkit",
+        "zatari"
+    ],
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,

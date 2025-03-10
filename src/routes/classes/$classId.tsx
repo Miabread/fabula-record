@@ -18,12 +18,38 @@ function Class() {
     return (
         <>
             <Heading color="eleri">{classData.name}</Heading>
+
+            {classData.freeBenefits.increaseHP && <P>Permanently increase your maximum Hit Points by 5.</P>}
             {classData.freeBenefits.increaseMP && <P>Permanently increase your maximum Mind Points by 5.</P>}
+            {classData.freeBenefits.increaseIP && <P>Permanently increase your maximum Inventory Points by 2.</P>}
+
             {classData.freeBenefits.ritualism && (
                 <P>
                     You may perform Rituals whose effects fall within the <B>Ritualism</B> discipline.
                 </P>
             )}
+
+            {classData.freeBenefits.martialMelee && (
+                <P>
+                    Gain the ability to equip <B>martial melee weapons</B>.
+                </P>
+            )}
+            {classData.freeBenefits.martialRanged && (
+                <P>
+                    Gain the ability to equip <B>martial ranged weapons</B>.
+                </P>
+            )}
+            {classData.freeBenefits.martialArmor && (
+                <P>
+                    Gain the ability to equip <B>martial armor</B>.
+                </P>
+            )}
+            {classData.freeBenefits.martialShields && (
+                <P>
+                    Gain the ability to equip <B>martial shields</B>.
+                </P>
+            )}
+
             {classData.skills.map((skill) => (
                 <>
                     <Heading color="eleri">

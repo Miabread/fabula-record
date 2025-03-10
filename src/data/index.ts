@@ -13,6 +13,10 @@ export interface FreeBenefits {
     increaseMP?: boolean;
     increaseIP?: boolean;
     ritualism?: boolean;
+    martialMelee?: boolean;
+    martialRanged?: boolean;
+    martialArmor?: boolean;
+    martialShields?: boolean;
 }
 
 export interface Skill {
